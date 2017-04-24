@@ -4,13 +4,13 @@ let getArraylength = (...arr) => { //Length of Array passed as Rest parameter
 }
 
 
-let sortRestArgs = (...arr) => { //Each element of Array passed as Rest parameter multiplied by two
+let sortRestArgs = (...arr) => { // Sorted Array passed as Rest parameter 
     return arr.sort((a, b) => {
         return a - b
     });
 }
 
-let multiplyByTwo = (...arr) => { // Sorted Array passed as Rest parameter
+let multiplyByTwo = (...arr) => { //Each element of Array passed as Rest parameter multiplied by two
     let newarr = [];
     arr.reduce((tot, num) => {
         newarr.push(num * 2)
